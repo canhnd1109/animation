@@ -1,0 +1,25 @@
+ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+ul li {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color);
+    border-radius: 50%;
+    animation: grow 1.6s ease-in-out infinite;
+    animation-delay: var(--delay);
+    box-shadow: 0 0 50px var(--color);
+}
+
+@keyframes grow {
+    0%,
+    40%,
+    100% {
+        transform: scale(0.2);
+    }
+    20% {
+        transform: scale(1);
+    }
+}

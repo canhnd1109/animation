@@ -1,0 +1,34 @@
+@keyframes pulse {
+    10% {
+        transform: scale(1.1);
+    }
+}
+.wrapper  {
+    background-color: red;
+    height: 80px;
+    width: 80px;
+    transform: rotate(45deg);
+    position: relative;
+    margin: auto;
+    margin-top: 25%;
+}
+.wrapper {
+    animation: pulse 1s infinite;
+}
+.heart::before,
+.heart::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -35px;
+    background-color: red;
+}
+.heart::after {
+    left: -35px;
+    background-color: red;
+}
